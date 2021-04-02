@@ -56,7 +56,7 @@ int prowl_push_msg(char* api_key, int priority, char* application_name, char* ev
 	printf("Prowl [debug]: Connected\n");
 #endif
 	
-	sprintf(buffer, "GET /publicapi/add?apikey=%s&priority=%d&application=%s&event=%s&description=%s\r\nHost: %s\r\n\r\n",
+	sprintf(buffer, "GET /publicapi/add?apikey=%s&priority=%d&application=%s&event=%s&description=%s HTTP/1.1\r\nHost: %s\r\n\r\nConnection: close\r\n",
 			api_key, priority, application_name, event_name, description, HOSTNAME);
 	if (SSL_write(c->ssl_handle, buffer, strlen(buffer)) <= 0)
 	{
