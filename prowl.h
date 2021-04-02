@@ -13,7 +13,7 @@
 #define STRICT
 
 #define SSL_PORT 443
-#define HOSTNAME "prowl.weks.net"
+#define HOSTNAME "api.prowlapp.com"
 #define MESSAGESIZE 11400
 #define BUFFERSIZE 512
 
