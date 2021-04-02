@@ -9,3 +9,9 @@ Credits:
 ---------------------
 URL encoding: http://www.geekhideout.com/urlcode.shtml
 OpenSSL base example: http://savetheions.com/2010/01/16/quickly-using-openssl-in-c/
+
+
+Update in April 2021
+---------------------
+This example-code is old and was made for times when HTTP/1.0 still was used.
+For many years HTTP/1.1 has been in use and now this example-code works again.
